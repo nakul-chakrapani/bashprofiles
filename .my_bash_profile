@@ -42,3 +42,9 @@ up(){
   fi
   cd $d
 }
+
+# Function to rename the title of terminal command line
+rename(){
+  local new_name=$1
+  echo -n -e "\033]0;$new_name\007"
+}
